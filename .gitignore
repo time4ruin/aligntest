@@ -1,0 +1,7 @@
+*.out
+.gdb_history
+*.txt
+tmp
+test*
+*.s
+.vscode/
