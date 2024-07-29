@@ -12,9 +12,9 @@ python3 run.py
 ``` python
 <test.out>
 Hit: 176, Miss: 193                         # branch prediction hit/miss 시 branch 실행에 소요되는 시간(cycle)
-BRANCH MISS THRESHOLD: 187                  # threshold = (hit + 2 * miss) / 3, 1:2가 왜 잘되는지는 모르겠으나 더 잘됨
-PC of Branch 1: 0x61e1379601bb              # 첫 번째 branch 함수의 virtual address (branch를 실행하는 "함수"의 주소라서 align된건 아님)
-PC of Branch 2: 0x61e13796803a              # 두 번째 branch 함수의 virtual address (branch를 실행하는 "함수"의 주소라서 align된건 아님)
+BRANCH MISS THRESHOLD: 187                  # threshold = (hit + 2 * miss) / 3, 1:2가 왜 잘 되는지는 모르겠으나 더 잘 됨
+PC of Branch 1: 0x61e1379601bb              # 첫 번째 branch 함수의 virtual address (branch를 실행하는 "함수"의 주소라서 align된 건 아님)
+PC of Branch 2: 0x61e13796803a              # 두 번째 branch 함수의 virtual address (branch를 실행하는 "함수"의 주소라서 align된 건 아님)
 Collision Generated: 9765/10000, One: 4898  # One = 만 비트 중 1의 개수, 그 중 PHT-based side-channel attack을 통해 값을 추출해낸 개수
 ```
 ``` python
